@@ -7,4 +7,7 @@
 
 ## Projects
 
-## Notes
+## Lectures
+[ Lectures ](https://github.com/CNUClasses/CPSC327/tree/master/Lectures)<BR>
+
+## Readings
