@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <style>
+    body {font-family: "Lato", sans-serif;}
+        /* Style the tab */
+    div.tab {
+        overflow: hidden;
+        border: none;
+    }
+
+    /* Style the buttons inside the tab */
+    div.tab button {
+        background-color: inherit;
+        float: left;
+        border: none;        
+        color:#EBEBEB;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 21px;
+        margin-right: 16px;
+    }
+
+    /* Change background color of buttons on hover */
+    div.tab button:hover {
+        color: #FFFFFF;
+        background-color: #666;
+        border-radius: 12px;
+/*         font-weight:bold; */
+    }
+
+    /* Create an active/current tablink class */
+    div.tab button.active {
+        background-color: #444;
+       font-weight:1000;
+      border-radius: 12px;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: none;
+    }
+    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <meta name="description" content="Keith Perkins : {{ site.description | default: site.github.project_tagline }}">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+    <title>Keith Perkins</title>
+  </head>
+
+  <body onload="initialize()">
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
+          <!-- uncomment below if you want repo name -->
+          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+          <!--<h1 id="project_title">Keith Perkins</h1>-->
+          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+          
+          <!-- Navigation bar see https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_right-->
+          <div class="tab" align="center" id = "buttonsDiv">
+              <!--loaded in initialize if needed-->
+          </div>
+        </header>
+    </div>
+    
+    <!--for ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--for loading various html-->
+    <script>
+    function initialize(){
+       loadContent('#main_content_wrap','/navbar/hobby.html');
+       loadContent('#buttonsDiv','buttons.html');
+    }
+    function loadContent(insertTag,name){
+      $(insertTag).html("<!-- NO CONTENT -->").load(name);
+    }
+    function manageButtonSelect(evt, name) {
+        loadContent("#main_content_wrap",name)
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        
+      </section>
+    </div>
+
+     <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        {% if site.github.is_project_page %}
+        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    {% if site.google_analytics %}
+      <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+  </body>
+</html>
