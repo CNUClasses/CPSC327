@@ -69,6 +69,7 @@
           
           <!-- Navigation bar see https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_right-->
           <div class="tab" align="center" id = "buttonsDiv">
+            lllll
               <!--loaded in initialize if needed-->
           </div>
         </header>
@@ -80,7 +81,12 @@
     <script>
     function initialize(){
        loadContent('#main_content_wrap','https://github.com/CNUClasses/CPSC327/blob/master/navbar/Sylabus.html');
-       loadContent('#buttonsDiv','https://github.com/CNUClasses/CPSC327/blob/master/navbar/buttons.html');
+       loadContent('#buttonsDiv','/navbar/buttons.html');
+      loadContent('#buttonsDiv','navbar/buttons.html');
+      loadContent('#buttonsDiv','/blob/master/navbar/buttons.html');
+      oadContent('#buttonsDiv','blob/master/navbar/buttons.html');
+      oadContent('#buttonsDiv','/blob/navbar/buttons.html');
+      oadContent('#buttonsDiv','/master/navbar/buttons.html');
     }
     function loadContent(insertTag,name){
       $(insertTag).html("<!-- NO CONTENT -->").load(name);
