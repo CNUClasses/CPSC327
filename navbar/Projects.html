@@ -69,6 +69,27 @@
                  <br>
               </td>
             </tr>
+            <tr>  
+               <td class="style_white "><em>5</em></td>
+               <td class="style_white ">12/8/17</td>
+               <td class="style_white ">
+               <strong style="color: #cc0000">Some projects below require C++11 or later support(for threads,  synchronization objects, other c++11 only syntax). </strong><br style="color: #cc0000">For threads to work you must enable them in eclipse. Click on project name->Properties-> 
+      C/C++ Build->Settings->GCC C++ Compiler-> Dialect ->'Language Standard' dropdown 
+      choose at least ISO C++11(-std=c++0x) <br style="color: #cc0000">
+      add -pthread to the 'Other Dialect Flags' below above 'Language Standard' dropdown then in the GCC C++ Linker Libraries, add the pthread library to the libraries-l text box on the right <br><br>
+                <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Projects-Eclipse/proj5_MED/Project 5 A Threadsafe, Serializable, Encrypting String Counter.pdf"> Project 4 description</a></strong> See the skeleton projects below for starter code<br>
+                  <strong><a href="https://github.com/CNUClasses/crypto.git"> crypto  </a></strong>(A library) implements AES symmetric encryption<br>
+                  <strong><a href="https://github.com/CNUClasses/crypto_test.git"> crypto test </a></strong>(An application) tests crypto library<br>
+                  <strong><a href="https://github.com/CNUClasses/datastore.git"> datastore  </a></strong>(A library) loads and stores to file system, uses crypto to encrypt/decrypt<br>
+                  <strong><a href="https://github.com/CNUClasses/stringdatabase.git"> stringdatabase  </a></strong>(A library) thread safe class that tracks strings that client applications add<br>
+
+                  <strong><a href="https://github.com/CNUClasses/MED_Tester.git"> MED_Tester </a></strong>(An application) verifies that stringdatabase is both threadsafe and can serialize both cleartext and encrypted data<br>
+                  
+                 <br>
+              </td>
+            </tr>
+
+
            </table>
     </section>
 
