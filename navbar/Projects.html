@@ -59,13 +59,13 @@
                 <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Projects-Eclipse/proj4_object_heiarchies_ABCs/Proj4_object_heiarchies_ABC_libraries_pointers.pdf"> Project 4 description</a></strong> See the skeleton projects below for starter code<br>
                     <strong><a href="https://github.com/CNUClasses/327_Proj4.git"> 327_proj4  (A tester)</a></strong><br>
                   <a href="https://github.com/CNUClasses/327_Proj4_Lib.git"> 327_Proj4_Lib (A library)</a>
-
+                  <strong style="color: #cc0000"><br><br>To enable C++11 support for this application. </strong><br style="color: #cc0000"> Click on the project name->Properties-> 
+                        C/C++ Build->Settings->GCC C++ Compiler-> Dialect ->'Language Standard' dropdown 
+                        choose at least ISO C++11(-std=c++0x) <br>
                   <BR>NOTE: If the IDE shows errors after you have linked appropriately, set the proper C++ dialect, and can compile 327_Proj4 to an executable, then its likely the Eclipse Indexer. You can fix these indexer flagged errors by:<br>
                   Right clicking both projects, selecting index, then rebuild.<br>
                   If above step does not work, then follow recomendations  <a href="https://stackoverflow.com/questions/13635079/enable-c11-in-eclipse-cdt-juno-kepler-luna-indexer">here</a> to force the indexer to recognize C++11 syntax.
-                  <strong style="color: #cc0000"><br><br>Also, as stated in the project description, you must enable C++11 support for this application. </strong><br style="color: #cc0000"> Click on project name->Properties-> 
-      C/C++ Build->Settings->GCC C++ Compiler-> Dialect ->'Language Standard' dropdown 
-      choose at least ISO C++11(-std=c++0x) <br>
+                  
                  <br>
               </td>
             </tr>
@@ -73,10 +73,9 @@
                <td class="style_white "><em>5</em></td>
                <td class="style_white ">12/8/17</td>
                <td class="style_white ">
-               <strong style="color: #cc0000">Some projects below require C++11 or later support(for threads,  synchronization objects, other c++11 only syntax). </strong><br style="color: #cc0000">For threads to work you must enable them in eclipse. Click on project name->Properties-> 
-      C/C++ Build->Settings->GCC C++ Compiler-> Dialect ->'Language Standard' dropdown 
-      choose at least ISO C++11(-std=c++0x) <br style="color: #cc0000">
-      add -pthread to the 'Other Dialect Flags' below above 'Language Standard' dropdown then in the GCC C++ Linker Libraries, add the pthread library to the libraries-l text box on the right <br><br>
+               <strong style="color: #cc0000">To enable C++11 support for threads. </strong><br style="color: #cc0000">Click on the project name->Properties-> 
+                        C/C++ Build->Settings->GCC C++ Compiler-> Dialect ->'Language Standard' dropdown 
+                        choose at least ISO C++11(-std=c++0x), add -pthread to the 'Other Dialect Flags' below 'Language Standard' dropdown.  In the GCC C++ Linker Libraries, add the pthread library to the libraries-l text box on the right <br><br>
                 <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Projects-Eclipse/proj5_MED/Project 5 A Threadsafe, Serializable, Encrypting String Counter.pdf"> Project 4 description</a></strong> See the skeleton projects below for starter code<br>
                   <strong><a href="https://github.com/CNUClasses/crypto.git"> crypto  </a></strong>(A library) implements AES symmetric encryption<br>
                   <strong><a href="https://github.com/CNUClasses/crypto_test.git"> crypto test </a></strong>(An application) tests crypto library<br>
