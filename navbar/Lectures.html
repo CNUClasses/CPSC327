@@ -183,7 +183,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td class="style_white "><em>11</em></td>
+			<td class="style_white "><em>11/12</em></td>
 			<td class="style_white ">
 			<strong><a href="https://mbevin.wordpress.com/2012/11/18/smart-pointers/">unique_ptr</a></strong> please read (and understand) up to "shared_ptr" section.  The sample code is good.<br>
 			<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Unique_Pointers_Excerpt_ From Effective_Modern_Cplusplus.pdf" >Unique Pointers - from Effective Modern C++ by Scott Meyers</a></strong> <br>
@@ -197,11 +197,33 @@
             </td>
 			<td class="style_white ">
 			<strong><a href="https://github.com/CNUClasses/11_forest_life_ABC_polymorphic_vector.git"> Forest Life</a></strong> A class heiarchy that simulates a forrest living through seasons and through the years. Please see the <a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/Class_diagram_forrest_life.png"> CLASS DIAGRAM</a> for how classes interact with each other</a><br />
-			<strong><a href="https://github.com/CNUClasses/11_exceptions_assertions.git"> Exceptions and Assertions</a></strong> <br />		
+			<strong><a href="https://github.com/CNUClasses/11_exceptions_assertions.git"> Exceptions and Assertions</a></strong> <br />	
+			<strong style="color: #cc0000">Projects below require C++11 or later support for threads and synchronization objects. </strong><br style="color: #cc0000">For threads to work you must enable them in eclipse. Click on project name->Properties-> 
+			C/C++ Build->Settings->GCC C++ Compiler-> Dialect ->'Language Standard' dropdown 
+			choose at least ISO C++11(-std=c++0x) <br style="color: #cc0000">
+			add -pthread to the 'Other Dialect Flags' below above 'Language Standard' dropdown then in the GCC C++ Linker Libraries, add the pthread library to the libraries-l text box on the right <br><br>
+			
+			<strong><a href="https://github.com/CNUClasses/thread_simple.git"> Single thread demo</a></strong> Use disassembly view to see that each c++ statement is equivelent to multiple assembly instructions.  An interrupt can be serviced after any assembly instruction, which may be in the middle of a C++ instruction<br />	
 			
 			</td>
 		</tr>
- 
+		<tr>
+			<td class="style_white "><em>13</em></td>
+			<td class="style_white ">
+			<strong><a href="https://www.tutorialspoint.com/cplusplus/cpp_static_members.htm">Static object members</a></strong> <br>
+			<strong><a href="https://stackoverflow.com/questions/4437527/why-do-we-use-volatile-keyword-in-c">Volatile and compiler optimizations</a>See Nawaz answer</strong> <br>
+			<strong><a href="https://baptiste-wicht.com/posts/2012/07/c11-concurrency-tutorial-part-4-atomic-type.html">Atomic Types</a></strong> encapsulate a value whose access is guaranteed to not cause data races and can be used to synchronize memory accesses among different threads. <br>
+			
+			</td>
+			<td class="style_white ">
+			<strong><a href="https://github.com/CNUClasses/thread_problem_atomic_solution.git"> Problems that threads can cause</a></strong> Running several threads, each reading and writing a global will cause unpredictable results. Demo using an atomic variable for a simple (but not generalizable to blocks of code>1 line) solution<br />
+			<strong><a href="https://github.com/CNUClasses/12_atomic.git">Another simple atomic demo</a></strong> using an atomic int <br />
+			<strong><a href="https://github.com/CNUClasses/mutex_thread.git"> Mutexes to synchronize threads</a></strong> Using a mutex to synchronize critical sections (as in multiple lines of code).  Also instructions for configuring GCC via Eclipse UI to use threads <br />
+			<strong><a href="https://github.com/CNUClasses/12_thread_ticket_agent.git">Threads, mutexes</a></strong> Demos sequential, single threaded problem solution, and multithreaded synchronized problem solution <br />
+			</td>
+		</tr>
+
+		
 
 	    </table>
         <p></p>
