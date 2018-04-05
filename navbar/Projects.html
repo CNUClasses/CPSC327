@@ -123,8 +123,8 @@
                   If you like you may work with a partner on this project.<br></strong>
                   <br>
                   <strong><u>Questions</u><br>
-                  <p>Q: For the load and store methods in data_store_file, how do we check to see if there is a crypto object defined? The header for data_store_file does not have a Crypto object listed as a variable, and the data_store has it listed as private, so the derived data_store_file can not access it from the base class. Am I missing something?</p>
-                  <p>A:In the header for DataStore_File see the following constructor<br></strong>
+                  <p>Q: For the load and store methods in data_store_file, how do we check to see if there is a crypto object defined? The header for data_store_file does not have a Crypto object listed as a variable, and the data_store has it listed as private, so the derived data_store_file can not access it from the base class. Am I missing something?</p></strong>
+                  A:In the header for DataStore_File see the following constructor<br>
 
                   DataStore_File(std::string fileName, Crypto* crypto = 0);<br>
                   <p>
