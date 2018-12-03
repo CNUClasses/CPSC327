@@ -296,49 +296,52 @@
 			
 			</td>
 			<td class="style_white ">
-			<strong><a href="https://github.com/CNUClasses/12_stop_threads.git"> Volatile keyword and how to stop threads cleanly</a>(plus using a mutex to protect cout)</strong> <br />
 			
 			<strong><a href="https://github.com/CNUClasses/thread_problem_atomic_solution.git"> Problems that threads can cause</a></strong> Running several threads, each reading and writing a global will cause unpredictable results. Demo using an atomic variable for a simple (but not generalizable to blocks of code>1 line) solution<br />
 			<strong><a href="https://github.com/CNUClasses/12_atomic.git">Another simple atomic demo</a></strong> using an atomic int <br />
 			<strong><a href="https://github.com/CNUClasses/mutex_thread.git"> Mutexes to synchronize threads</a></strong> Using a mutex to synchronize critical sections (as in multiple lines of code).  Also instructions for configuring GCC via Eclipse UI to use threads <br />
-			<strong><a href="https://github.com/CNUClasses/12_thread_ticket_agent.git">Threads, mutexes</a></strong> Demos sequential, single threaded problem solution, and multithreaded synchronized problem solution <br />
-
+			<strong><a href="https://github.com/CNUClasses/12_stop_threads.git"> Volatile keyword and how to stop threads cleanly</a>(plus using a mutex to protect cout)</strong> <br />
 			<strong><a href="https://github.com/CNUClasses/12_when_threads_go_wrong.git">SOme of the problems with threads</a></strong> Deadlock (2 mutexes), locking a mutex twice in same thread (presents as deadlock), raw mutexes verses lock_guard<br />
+			<strong><a href="https://github.com/CNUClasses/12_thread_ticket_agent.git">Thread ticket agent</a></strong> Demos sequential, single threaded problem solution, and multithreaded synchronized problem solution <br />
+
+
+			<strong><a href="https://github.com/CNUClasses/13_Make_Me_Threadsafe2.git">Make me threadsafe</a></strong>Finding critical sections, using multiple mutexes, using system monitor to see resource use<br />	
 			<strong><a href="https://github.com/CNUClasses/12_Make_Me_Threadsafe.git">Make_Me_Threadsafe</a></strong> Unsynchronized code with suggested solution.  (Car assembly line where wheels are added to chassis) <br />
 			</td>
 		</tr>
-<!--	
+	
 		<tr>
-			<td class="style_white "><em>14</em></td>
+			<td class="style_white "><em>15</em></td>
 			<td class="style_white ">
-			<strong><a href="https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/">(Advanced) C++11 threads, affinity and hyperthreading</a>Excellent! relates C++ threads to processor hardware</strong> <br>
+			<strong><a href="https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/">(Advanced) C++11 threads, affinity and hyperthreading</a></strong>Excellent! relates C++ threads to processor hardware <br>
 			<!--
 			<strong><a href="http://www.geeksforgeeks.org/lambda-expression-in-c/">Lambda expressions in C++</a></strong> Introduction, they are in every language now, might as well learn them<br>
 			<strong><a href="https://blog.smartbear.com/c-plus-plus/11-tutorial-lambda-expressions-the-nuts-and-bolts-of-functional-programming/	
 			">Another Lambda tutorial</a></strong> <br>
 			-->
-			<!--
+
 			<strong><a href="https://stackoverflow.com/questions/10422034/when-to-use-extern-in-c/	
 			">When to use extern in C++</a></strong> See first answer<br>
+		</td>
+		<td class="style_white ">
+			<strong><a href="https://github.com/CNUClasses/extern.git"> Externs</a></strong> How to make global variables visible to all files in a project<br />	
+			<strong><a href="https://github.com/CNUClasses/global_logger_using_extern_static.git"> A logger class made threadsafe using a static member mutex</a></strong>Code demos creating a global (to entire project) threadsafe, logging object using externs.  Also demos using the logging class in a local function. <br />	
 			
-			
-				
+			<!--			
 			</td>
 			<td class="style_white ">
-			<strong><a href="https://github.com/CNUClasses/13_Make_Me_Threadsafe2.git">Another make me threadsafe</a></strong> plus some demos (system monitor resources, single verses multiple locks work accomplished) <br />
-			<!--
+			
 			<strong><a href="https://github.com/CNUClasses/functor.git"> Function objects</a>Just an object that overides operator() so it can act like a function</strong> <br />
 			<strong><a href="https://github.com/CNUClasses/lambda.git"> Lambda functions</a>Demo of functors and lambdas</strong> <br />
 			-->	
-			<!--
-			<strong><a href="https://github.com/CNUClasses/extern.git"> Externs</a>How to make global variables visible to all files in a project</strong> <br />	
-			<strong><a href="https://github.com/CNUClasses/global_logger_using_extern_static.git"> A logger class made threadsafe using a static member mutex</a>Code demos creating a global (to entire project) threadsafe, logging object using externs.  Also demos using the logging class in a local function.</strong> <br />	
+		
+			
 			</td>
 		</tr>
 		<tr>
-			<td class="style_white"> <em>15</em></td>
+			<td class="style_white"> <em></em></td>
 			<td class="style_white "colspan = 2>
-			<strong style="color: #cc0000">Final Exam- emphasizes content, examples and projects covered AFTER Test 1 (weeks 9-14) <br>
+			<strong style="color: #cc0000">Final Exam- emphasizes content, examples and projects covered AFTER Test 1 (weeks 9-15) <br>
 			You may bring a single 8.5" x 11" sheet of notes(both sides).  Good Luck </strong> <br>
 		</tr>
 
