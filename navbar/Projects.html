@@ -103,7 +103,7 @@
                   Right clicking both projects, selecting index, then rebuild.<br>
                   If above step does not work, then follow recomendations  <a href="https://stackoverflow.com/questions/13635079/enable-c11-in-eclipse-cdt-juno-kepler-luna-indexer">here</a> to force the indexer to recognize C++11 syntax.-->
           
-                 <br>-->
+                 <br>
               </td>
             </tr>
             <tr>  
@@ -134,11 +134,8 @@
                   <p>
                   As part of object construction, you must also also call the base class constructor.  It takes a pointer to a crypto object and provides  encrypt decrypt functions.  Given that these functions are protected, they are accessible from DataStore_File for all its crypto needs. </p>
                   <br><br>
-                  <strong><u>Comments</u><br>
+                  <strong><u>Comments</u></strong><br>
                   <p>If you do not create an object using new then do not delete it. Especially in destructors.</p>
-
-                  For some reason I named the mutex in String_database 'mutex'.  Because of this,  you want to scope your lock_guards (if using) as
-                  std::lock_guardmutex> guard(mutex);
                   <br><br>
                   
                  <br>
