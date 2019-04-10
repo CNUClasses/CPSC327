@@ -131,9 +131,10 @@
                <td class="style_white "><em>6</em></td>
                <td class="style_white ">4/19/19</td>
                <td class="style_white ">
-               <strong style="color: #cc0000">To enable C++11 support for threads. </strong><br style="color: #cc0000">Click on the project name->Properties-> 
-                        C/C++ Build->Settings->GCC C++ Compiler-> Dialect ->'Language Standard' dropdown 
-                        choose at least ISO C++11(-std=c++0x), add -pthread to the 'Other Dialect Flags' below 'Language Standard' dropdown.  In the GCC C++ Linker Libraries, add the pthread library to the libraries-l text box on the right <br>
+                <br><strong style="color: #cc0000"> Choosing a C++ Language Standard in Eclipse CDT (Oxygen)</strong><br>Click on project name->Properties-> C/C++ Build->Settings->GCC C++ Compiler-> Dialect ->'Language Standard' dropdown.  ISO C++11(-std=c++0x) or later will be all you need in this class<br>
+
+                <br><strong style="color: #cc0000">To enable C++11 support for threads. </strong><br style="color: #cc0000">If you are using threads you must add the pThread library-click on project name->Properties-> C/C++ Build->Settings->GCC C++ Linker-> Libraries -> add 'pthread' (with no '') to the Libraries (-l) list box on the right. 
+             
             <!--    <strong style="color: #00cc00">Project bounty - 2 points per bug and bug fix.  This is the sort of code you will encounter professionally (Which means it has bugs).  Find them, report them to me with a solution, and I will add 2 points to this projects grade for you. Note: only the first person to report a bug gets the bounty.</strong><br ><br>-->
                 <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Projects-Eclipse/proj6_MED/A_Threadsafe_Serializable_Encrypting_String_Counter.pdf"> Project 6 description</a></strong> See the skeleton projects below for starter code<br>
                 Note, I only want you to turn in 4 files; data_store.cpp, data_store_file.cpp, string_database.cpp, MED_Tester.cpp  Please do not zip them together or include them in extraneous directories. This is so my tester can easily extract and place your code in my test harness.<br>
