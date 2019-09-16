@@ -21,8 +21,20 @@
 		
     <strong>Where can I do my assignments?</strong>  Both Linux with the GNU toolchain and Eclipse are installed on the computers in Hunter Creech.  Open a terminal, type 'eclipse &' at the prompt (without the 's).<br>
 
-    <strong>Importing a project from git into Eclipse.</strong>  From Github; get the URI from the git Repo online by clicking the Green 'Clone or Download' button and copying the given URL.  In Eclipse; choose File->Import->Git->Projects from Git->Clone URI.  Paste the clone URL you copied from github earlier  and follow the prompts. <br>
-    <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/Eclipse_Customizations.pdf" style="color: #cc0000"> Eclipse Problems and Customizations</a></strong> Overcoming some of the annoying bits in Eclipse ('Binary not Found' error,debug configuration creation, toolchain selection, Language standardization, IDE Setup, etc.) <br>
+    <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Projects-Eclipse/Import_and_Export_eclipse_projects.pdf"> How to import a project from git.  How to import and export projects using eclipse archive files.<BR><br>
+      <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/Eclipse_Customizations.pdf" style="color: #cc0000"> Eclipse Problems and Customizations</a></strong> Overcoming some of the annoying bits in Eclipse ('Binary not Found' error,debug configuration creation, toolchain selection, Language standardization, IDE Setup, etc.) <br>
+    <br><strong>Minimal coding standards:</strong>
+      <ul>
+         <li>Please comment all functions and interesting bits of code</li>
+         <li>Please mind file case. Utilities.h and utilities.h are different files</li>
+         <li>Please do not use magic numbers.  Use descriptive constants instead.</li>
+         <li>Please use provided constants.</li>
+         <li>Please put all constants in one place (suggestion: constants.h).</li>
+         <li>Please choose appropriate variable names.  For instance, between  'bro' and  'processStats'. Which is a better description of a container holding process_stats structs?</li>
+         <li>Please include system includes before user includes (<> before "")</li>
+         <li>Please clean code before turn in. Do not leave extraneous print statements.  Makes the solution look a bit rushed and rubbishy.  If you insists on print statements, use a logging library instead.</li>
+         <li>Please do not leave an unseemly amount of whitespace and/or commented out code in your solution. Makes an instant bad impression. Use source control (git) to manage your software versions. </li>
+      </ul>
     <!--<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Projects-Eclipse/Import_and_Export_eclipse_projects.pdf"> How to export and import an eclipse project to/from a zip file</a></strong><br>-->
             	</td>
             </tr>
@@ -40,17 +52,16 @@
                   <strong><a href="https://github.com/CNUClasses/327_proj1_make.git"> Project1 Starter files</a></strong> <br>
               </td>
             </tr>
-<!--
+
            <tr>	
                <td class="style_white "><em>2</em></td>
-               <td class="style_white ">2/1/19</td>
+               <td class="style_white ">9/28/19</td>
                <td class="style_white ">
            		  <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Projects-Eclipse/proj2_array/Project2_New_Eclipse.pdf"> Project 2 description</a></strong><br>
-                <strong><a href="https://github.com/CNUClasses/327_project2_starter.git"> Project2_Starter</a></strong> If you have any problems (for instance choosing a toolchain other than GNU or creating a debug build) see <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/Eclipse_Customizations.pdf" style="color: #cc0000"> Eclipse Problems and Customizations</a></strong>  <br><br>
+                <strong><a href="https://github.com/CNUClasses/327_project2_starter.git"> Project2_Starter</a></strong><br><br>
                 Things to consider
                 <ul>
                   <li>In compare functions, pass values by ref, dont incur the cost of a copy</li>
-                  <li>Do not leave debug print statements, large blocks of empty lines, or commented out code.</li>
                   <li>You only need to meet requirements, just because there are 3 sort options does not mean you must do all three</li>
                   <li>Use the value of enums!  Dont do this<br>
                       void sortArray(constants::sortOrder so) {<br>
@@ -58,7 +69,7 @@
                       switch (so) {<br>
                         case 0:<br>
 
-                  do this<br>
+                  do this instead<br>
                   void sortArray(constants::sortOrder so) {<br>
                       :<br>
                       switch (so) {<br>
@@ -66,7 +77,7 @@
                   </ul>
               </td>
             </tr>
-
+<!--
              <tr>  
                <td class="style_white "><em>3</em></td>
                <td class="style_white ">2/16/19</td>
