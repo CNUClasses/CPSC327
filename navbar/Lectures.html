@@ -246,6 +246,18 @@
 		<td class="style_white ">
 			<!-- Explain diff between composition and inheritance, show example with professor, then model CNU.  Start with building->Academic/residential , Floors->rooms, Rooms->Office,Bed,Bath,class. Add floors to vector. 
 				But bog down at how to set up a model that handles variable number of floors, or various types of rooms on a floor -->
+
+				<!-- Override  in .h file  	show what happens when you add a default parameter to base class and forget to change the signatures of derived classes
+					virtual void foo() override
+				Declaring a method as "override" means that that method is intended to rewrite a (virtual) method on the base class. The overriding method must have same signature (at least for the input parameters) as the method it intends to rewrite.
+				Why is this necessary? Well, the following two common error cases are prevented:
+				one mistypes a type in the new method. The compiler, unaware that it is intending to write a previous method, simply adds it to the class as a new method. The problem is that the old method is still there, the new one is added just as an overload. In this case, all calls towards the old method will function just as before, without any change in behavior (which would have been the very purpose of the rewriting).
+				one forgets to declare the method in the superclass as "virtual", but still attempts to re-write it in a subclass. While this will be apparently accepted, the behavior won't be exactly as intended: the method is not virtual, so access through pointers towards the superclass will end calling the old (superclass') method instead of the new (subclass') method.
+				Adding "override" clearly disambiguates this: through this, one is telling the compiler that three things are expecting:
+				there is a method with the same name in the superclass
+				this method in the superclass is declared as "virtual" (that means, intended to be rewritten)
+				the method in the superclass has the same (input*) signature as the method in the subclass (the rewriting method) -->
+
 			<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Classes_Virtual_Polymorphism_Calling_Order_Pure_Virtual_Functions_ABC.pdf">11_Classes Virtual_Polymorphism_Calling-Order_Pure_Virtual_Functions_ABC</a></strong> <br>				
            
 		</td>
