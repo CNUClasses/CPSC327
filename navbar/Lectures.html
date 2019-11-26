@@ -259,7 +259,7 @@
 				the method in the superclass has the same (input*) signature as the method in the subclass (the rewriting method) -->
 
 			<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Classes_Virtual_Polymorphism_Calling_Order_Pure_Virtual_Functions_ABC.pdf">11_Classes Virtual_Polymorphism_Calling-Order_Pure_Virtual_Functions_ABC</a></strong> <br>				
-           
+					
 		</td>
 		<td class="style_white ">
 			<strong><a href="https://github.com/CNUClasses/11_Virtual_BaseClassPointers_animals.git"> Virtual functions and Base Class Pointer manipulation of derived classes</a></strong> A class heiarchy with animal, farmanimal and sheep<br />			
@@ -268,6 +268,85 @@
 
 		</td>
 	</tr>
+	<tr>
+		<td class="style_white "><em>13</em></td>
+		<td class="style_white ">
+				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Inheritence_ABC_ForrestLife.pdf" >Forest Life, ABC and Class Heiarchy example</a></strong> <br>
+
+			<!-- forest life- develop solution based on composition and inheritance.  Then for leaf crunch it down to just composition and emphasize file number difference (10 for composition BC->decid, conif, Pine, popular, maple) verses 2 for pure composition -->
+			<!-- rules
+			1. do not use IDE, do high level design first, do not get bogged down with detail
+			2. evaluate design
+			3. go to 1
+
+			If you code before design, then you tend to try to fix major design flaws by shoehorning in hacky fixes, if you dont code until design is complete, then this is less likely to happen
+			Follow this and you will finish projects faster, they will be cleaner and will have fewer bugs
+
+			prefere composition over inheritance
+			simpler is better  -->
+
+			<!-- Multithreading start
+				show where processor speed leveled off in 2008 and # cores started to increase, speedup n longer from clock - so need to utilize additional cores for speedup
+				motivate- game loop (need user input and simultaneously rendering), multi core-want to fully utilize all cores to crack a symmetric key
+				show cores - show cache, show registers , show distance to memory over bus and why cores try to run from cache
+				show memory model and how a single threaded process runs in the memory Model
+				give overview of how OS doles out time on a core (use readyQ, blockedQ)
+
+				Pre C++ 11-> had to find library, link it and make calls, now its built in
+				Show correct mechanics of using a thread (includes, starting and joining what happens when main exits before thread)
+				SHow how not deterministic when incrementing and decrementing a number 
+				dont know how long it takes for thread to start
+				how looped adding and subtracting looks fine for low loopcount of adding and subtracting but as loopcount increases problems start to manifest
+				program was always non-deterministic, its just showing up now. -->
+			<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/13_concurrency_1.pdf" >Multithreading introduction</a></strong> <br>
+		</td>
+		<td class="style_white ">
+			<strong><a href="https://github.com/CNUClasses/11_Teachers1.git"> Teachers - Inheritence, Composition, vector full of base class and unique pointers</a></strong> Lecture demo project.  Syntax for a vector full of base class pointers, and a vector full of unique_pointers and how to dereference both. Using iterators and for each loops to iterate over a vector.<br />	
+			<strong><a href="https://github.com/CNUClasses/11_forest_life_ABC_polymorphic_vector.git"> Forest Life</a></strong> A class heiarchy that simulates a forest living through seasons and through the years. Please see the <a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/Class_diagram_forrest_life.png"> CLASS DIAGRAM</a> for how classes interact with each other</a><br />		
+			<BR>
+			<strong style="color: #cc0000"> To enable C++11 support </strong> Click on project name->Properties-> C/C++ Build->Settings->GCC C++ Compiler-> Dialect ->'Language Standard' dropdown.  ISO C++11(-std=c++0x) or later will be all you need in this class<br>
+			<strong style="color: #cc0000">To enable C++11 support for threads. </strong> First enable C++11 support as described above. Then add the pThread library-click on project name->Properties-> C/C++ Build->Settings->GCC C++ Linker-> Libraries -> add 'pthread' (with no '') to the Libraries (-l) list box on the right. <br><br> 		
+			<strong><a href="https://github.com/CNUClasses/thread_simple.git"> Single thread demo</a></strong> Use disassembly view to see that each c++ statement is equivelent to multiple assembly instructions.  An interrupt can be serviced after any assembly instruction, which may be in the middle of a C++ instruction<br />	
+		</td>
+	</tr>
+	<tr>
+			<td class="style_white "><em>14</em></td>
+			<td class="style_white ">
+				Multithreading continuation<BR>
+
+				<!-- Show that var++ is really 3 assembly instructions, show how interrupt causes problem
+				Want atomic operation
+				look up atomic online 
+				show how it solves single line problem
+				then introduce deposit withdrawel problem (if bal>=amount then bal_=amount) show how you cant tell if deposit or withdraw thread will run first, show how atomics fail this 2 line problem. -->
+
+				<strong><a href="https://baptiste-wicht.com/posts/2012/07/c11-concurrency-tutorial-part-4-atomic-type.html">Atomic Types</a></strong> encapsulate a value whose access is guaranteed to not cause data races and can be used to synchronize memory accesses among different threads. <br>
+			
+			</td>
+			<td class="style_white ">
+					<strong><a href="https://github.com/CNUClasses/thread_problem_atomic_solution.git"> Problems that threads can cause</a></strong> Running several threads, each reading and writing a global will cause unpredictable results. Demo using an atomic variable for a simple (but not generalizable to blocks of code>1 line) solution<br />
+					<strong><a href="https://github.com/CNUClasses/12_atomic.git">Another simple atomic demo</a></strong> using an atomic int <br />
+					
+			</td>
+		</tr>
+	<tr>
+			<td class="style_white "><em>15</em></td>
+			<td class="style_white ">
+				<!-- Introduce mutexes to synchronize multipe lines of talk about critical sections
+				externs?
+				possibly fix a crappily written c++ program -->
+				
+				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/12_mutexes_atomics_wrapup_when_things_go_wrong.pdf">Notes: Mutexes, Atomics,When things go wrong</a></strong> lecture notes<br>
+		
+			</td>
+			<td class="style_white ">
+					<strong><a href="https://github.com/CNUClasses/mutex_thread.git"> Mutexes to synchronize threads</a></strong>
+
+
+			</td>
+		</tr>
+	
+		
 
 	
 	
