@@ -289,6 +289,52 @@
 
 	</td>
 </tr>
+<tr>
+	<td class="style_white "><em>13</em></td>
+	<td class="style_white ">
+		<strong><a href="https://mbevin.wordpress.com/2012/11/18/smart-pointers/">unique_ptr</a></strong> please read (and understand) up to "shared_ptr" section.  The sample code is good.<br>
+		<strong><a href="https://mbevin.wordpress.com/2012/11/20/move-semantics/">Move semantics</a></strong>WARNING! Complex and subtle, not required for this course but useful professionally.  The sample code is good.<br>
+		<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Unique_Pointers_Excerpt_ From Effective_Modern_Cplusplus.pdf" >Unique Pointers - from Effective Modern C++ by Scott Meyers</a></strong> <br>
+		<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/10_cpp_11_smart_pointers.pdf" >Smart pointers in C++ 11</a></strong> <br>
+		<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/10_Inheritence_Composition_model_professor_ROUGH_NOTES.pdf">Boardwork-inheritence examples</a></strong> <br>
+		<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Inheritence_introduction.pdf">Inheritance special cases</a></strong>Constructor/destructor calling order, how to implement copy constructor/assignment operator in derived classes.<br>
+	
+	</td>
+	<td class="style_white ">
+		<!-- <strong><a href="https://github.com/CNUClasses/demo_classes_vector_pointer.git"> Pointers, Parsers, Classes and a vector</a></strong> Part of project 3 using classes<br /> -->
+		<strong><a href="https://github.com/CNUClasses/unique_ptr_ex.git"> Unique pointers - intro code</a></strong> <br />
+		<strong><a href="https://github.com/CNUClasses/demo_pointers_vectors.git"> Vectors full of base class and unique pointers</a></strong> Delete object pointed to before vector goes out of scope, or just use a unique_ptr (demo of each)<br />
+		<strong><a href="https://github.com/CNUClasses/Inheritence_Intro.git">Inheritence Introduction</a></strong>Models 'Is a' relationship.  Large and deep inheritence heiarchies are difficult to maintain<br/>
+		<strong><a href="https://github.com/CNUClasses/Composition_Intro.git">Composition Introduction</a></strong>Models 'Has a' relationship.  More natural than inheritence.  Prefer Composition over inheritence<br/>
+	</td>
+</tr>
+<tr>
+	<td class="style_white "><em>14</em></td>
+	<td class="style_white ">
+			<!-- Explain diff between composition and inheritance, show example with professor, then model CNU.  Start with building->Academic/residential , Floors->rooms, Rooms->Office,Bed,Bath,class. Add floors to vector. 
+				But bog down at how to set up a model that handles variable number of floors, or various types of rooms on a floor -->
+
+				<!-- Override  in .h file  	show what happens when you add a default parameter to base class and forget to change the signatures of derived classes
+					virtual void foo() override
+				Declaring a method as "override" means that that method is intended to rewrite a (virtual) method on the base class. The overriding method must have same signature (at least for the input parameters) as the method it intends to rewrite.
+				Why is this necessary? Well, the following two common error cases are prevented:
+				one mistypes a type in the new method. The compiler, unaware that it is intending to write a previous method, simply adds it to the class as a new method. The problem is that the old method is still there, the new one is added just as an overload. In this case, all calls towards the old method will function just as before, without any change in behavior (which would have been the very purpose of the rewriting).
+				one forgets to declare the method in the superclass as "virtual", but still attempts to re-write it in a subclass. While this will be apparently accepted, the behavior won't be exactly as intended: the method is not virtual, so access through pointers towards the superclass will end calling the old (superclass') method instead of the new (subclass') method.
+				Adding "override" clearly disambiguates this: through this, one is telling the compiler that three things are expecting:
+				there is a method with the same name in the superclass
+				this method in the superclass is declared as "virtual" (that means, intended to be rewritten)
+				the method in the superclass has the same (input*) signature as the method in the subclass (the rewriting method) -->
+
+				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Classes_Virtual_Polymorphism_Calling_Order_Pure_Virtual_Functions_ABC.pdf">11_Classes Virtual_Polymorphism_Calling-Order_Pure_Virtual_Functions_ABC</a></strong> <br>				
+ 
+	</td>
+	<td class="style_white ">
+		<strong><a href="https://github.com/CNUClasses/11_Virtual_BaseClassPointers_animals.git"> Virtual functions and Base Class Pointer manipulation of derived classes</a></strong> A class heiarchy with animal, farmanimal and sheep<br />			
+		<strong><a href="https://github.com/CNUClasses/11_Virtual_BaseClassPointers_Employee_Manager.git"> Virtual functions and Base Class Pointer manipulation of derived classes </a></strong> A class heiarchy with Manager and Employee (goes with 'Boardwork-inheritence examples')<br />				
+		<strong><a href="https://github.com/CNUClasses/11_AbstractBaseClass_Polymorphism_Vector.git">  AbstractBaseClass Polymorphism and a Vector </a></strong> Oil and Water mixing in a vector full of base class Liquid pointers.  Delete object pointed to before vector goes out of scope (avoid manual deletion by using unique pointers as shown in 'Vectors full of base class and unique pointers' project)<br />		
+
+</td>
+</tr>
   
 		<q></q>
 			<!-- <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/7_Conditional_Compilation_using_the_preprocessor.pdf">Conditional Compilation</a></strong> (ADVANCED) Conditional Compilation using the preprocessor<br>				
