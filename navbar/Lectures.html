@@ -132,7 +132,18 @@
 			<br>
 			<strong><a href="https://www.youtube.com/watch?v=LwAPKuJpvmA"> Pointers and References </a></strong>Short video with a punishing soundtrack<br>	
 			<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/4_pointers_references_functions.pdf"> 4_pointers_references_functions (ROUGH NOTES).pdf</a></strong><br>
-	
+			<b>RULES FOR PASSING VARIABLES TO FUNCTIONS</b>
+				<ol>
+					<li><b>NEVER pass by value ... int func(int i)</b>  You make a potentially time and memory consumming copy of the variable. Changes made to it in the function are lost when the function returns.<br></li>
+					<li><b>Prefer: pass by reference ... int func(int &i)</b>  You pass the address of the variable, very fast.  Changes made to the variable in the function are preserved when the function returns. A reference cannot be null so you don't have to verify it's not like you do with pointers.  <br></li>
+					<li><b>Prefer: pass by pointer ... int func( int *i)</b> You pass the address of the variable, very fast. Changes made to the variable in the function are preserved when the function returns. A pointers can be null (==0) so you must ensure it's not before dereferencing it. Like so;<br> 
+				    <code>int func( int *i){ <br>
+						&emsp; if(i){		    //as long as i is not 0<br>
+						&emsp;&emsp;   *i=7;	//then you may manipulate the value that i points to <br>
+						&emsp; }<br>
+				   	} </code>
+				</li>
+				</ol>
 			<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/In_CLASS_LAB_Designing_a_Cpp_project.pdf" style="color: #00cc00">In CLASS LAB: Designing_a_Cpp_project.pdf</a></strong> How to design and layout a C++ project<br> 
 					
 		</td>
@@ -144,7 +155,7 @@
 			
 			</td>
 	</tr>
-<!--
+
 
 		<tr>
 			<td class="style_white "><em>5</em></td>
@@ -157,12 +168,9 @@
 			</td>
 			<td class="style_white ">
 			<strong><a href="https://github.com/CNUClasses/4_vector_sort.git"> Vectors and Sorting</a></strong> <br />
-
-			
-			
 			</td>
 		</tr>
-
+<!--
 		<tr>
 			<td class="style_white "><em>6</em></td>
 			<td class="style_white ">				
