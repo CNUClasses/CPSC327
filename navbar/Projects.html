@@ -90,6 +90,35 @@
                            
               </td>
             </tr>
+            
+            <tr>	
+              <td class="style_white "><em>3</em></td>
+              <td class="style_white ">10/2/21</td>
+              <td class="style_white ">
+                <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Projects-Eclipse/proj3_studentgrades/Project_vector_sort_student_grades.pdf"> Project 3 description</a></strong><br>
+               <strong><a href="https://github.com/CNUClasses/PROJ_Vector_StudentGrades_SKELETON/settings"> Project3_Starter</a></strong><br><br>
+               <strong><a href="https://github.com/CNUClasses/test_stringstream.git"> DEMO: How to use stringstream to parse a line from a file</a></strong><br><br>
+               Things to consider
+               <ul>
+                 <li>The last parameter in readFile has a default argument given (=KP::SEPERATOR_CHAR )
+                     Default arguments should only be given in the function declaration, not the definition. In other
+                     words please do not include this default argument in the function definition in the cpp file because it
+                    will cause your program to fail to compile</li>
+                 <li>In compare functions, pass values by ref, dont incur the cost of a copy</li>
+                 <li>Use the value of enums!  Dont do this<br>
+                     void sortArray(KP::SORT_TYPE so) {<br>
+                     :<br>
+                     switch (so) {<br>
+                       case 0:<br>
+
+                 do this instead<br>
+                 void sortArray(KP::SORT_TYPE so) {<br>
+                     :<br>
+                     switch (so) {<br>
+                       case KP::NAME:<br></li>
+                 </ul>
+             </td>
+           </tr>
 <!--
          <tr>	
                <td class="style_white "><em>3</em></td>
