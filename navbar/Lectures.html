@@ -314,6 +314,17 @@
 		
 				<br><!-- merge the following 2 into 1 lecture, the notes are better -->
 				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/10_Inheritence_Composition.pdf">Inheritence and Composition introduction</a></strong> <br>
+				Inheritence models an 'is a' relationship - A horse is an animal<br>
+				Some general rules:<br>
+				-prefer shallow inheritence heiarchy (stick to 2 or at most 3 levels)<br>
+				-push as much functionality into the base class as you can to prevent duplicate code in derived classes (remember pay() example and DRY (don't repeat yourself) principal )<br>
+				-derive publicly from base classes<br>
+				-if derived classes need access to base class member functions or variables, make those member functions and variables protected<br>
+				-if derived function overrides base function, mark base function as virtual in header file<BR>
+				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/Composition.pdf">Composition introduction Slides</a></strong> <br>
+				Composition models a 'has a' relationship - A car has a radio<BR>
+				<strong><a href="https://drive.google.com/file/d/1eXFAOV3tfllLfIBnZwejVBRHliD8ZxH7/view?usp=sharing">Composition introduction Slides VIDEO</a></strong> <br>
+				
 				<!-- Get Rid Of This One <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Inheritence_introduction.pdf">Inheritance special cases</a></strong>Constructor/destructor calling order, how to implement copy constructor/assignment operator in derived classes.<br> -->
 				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Classes_Virtual_Polymorphism_Calling_Order_Pure_Virtual_Functions_ABC.pdf">11_Classes Virtual_Polymorphism_Calling-Order_Pure_Virtual_Functions_ABC</a></strong><br>				 
 <!--				<strong><a href="https://www.modernescpp.com/index.php/override-and-final">Override and Final</a></strong>A way to ensure correct override, or to prevent it entirely<br>
