@@ -287,13 +287,15 @@
 			<br><strong>External content</strong><br>
 				<strong><a href="https://mbevin.wordpress.com/2012/11/18/smart-pointers/">unique_ptr</a></strong> please read (and understand) up to "shared_ptr" section.  The sample code is good.<br>
 				<strong><a href="https://mbevin.wordpress.com/2012/11/20/move-semantics/">Move semantics</a></strong>WARNING! Complex and subtle, not required for this course but useful professionally.  The sample code is good.<br>
-				<strong><a href="https://www.geeksforgeeks.org/static-keyword-cpp/">Static Keyword in C++, variables, member functions, member variables </a></strong> All things static in C++ <br>
+				<!-- <strong><a href="https://www.geeksforgeeks.org/static-keyword-cpp/">Static Keyword in C++, variables, member functions, member variables </a></strong> All things static in C++ <br> -->
 
 				<br><strong>Lectures</strong><br>
 				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Unique_Pointers_Excerpt_ From Effective_Modern_Cplusplus.pdf" >Unique Pointers - from Effective Modern C++ by Scott Meyers</a></strong> <br>
 				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/10_cpp_11_smart_pointers.pdf" >Smart pointers in C++ 11</a></strong> <br>	
-				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/12_Exceptions.pdf" >Exceptions and Assertions</a></strong> <br>	<br>
-				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/10_classes_this_pointer_static_members_operators.pdf">this pointer, static, operator overloading</a></strong> <br>
+				<!-- for for 22 <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/12_Exceptions.pdf" >Exceptions and Assertions</a></strong> <br>	<br> -->
+				<!-- not for 22 (or ever)remove operator overloading from this deck as it is gone over below<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/10_classes_this_pointer_static_members_operators.pdf">this pointer, static, operator overloading</a></strong> <br> -->
+				<!-- not for 22 <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/10_operator_overloading.pdf">operator overloading</a></strong> <br> -->
+				<!-- not for 22 <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/12_Exceptions.pdf" >Exceptions and Assertions</a></strong> <br>	<br> -->
 
 			</td>
 		<td class="style_white ">
@@ -310,35 +312,20 @@
 
 						<strong><a href="https://github.com/CNUClasses/unique_ptr_ex.git"> Unique pointers - intro code</a></strong> Goes with the unique_ptr tutorial on the left<br />
 						<strong><a href="https://github.com/CNUClasses/demo_pointers_vectors.git"> Vectors full of base class and unique pointers</a></strong> Delete object pointed to before vector goes out of scope, or just use a unique_ptr (demo of each)<br />
-						<strong><a href="https://github.com/CNUClasses/11_exceptions_assertions.git"> Exceptions and Assertions</a></strong> <br />	
-						<strong><a href="https://github.com/CNUClasses/static_demo.git">Static variables and functions in objects</a></strong>A global tied to the class, not a particular instance of the class.  Can have static functions and variables<br />
-						<strong><a href="https://github.com/CNUClasses/demo_operator_overload.git">Class operator overloading</a></strong>Overloading the comparison operator in a class. Demo sorting a vector full of this class objects using 2 param std::sort<br />
-		
+						<!-- not for spring 22 <strong><a href="https://github.com/CNUClasses/static_demo.git">Static variables and functions in objects</a></strong>A global tied to the class, not a particular instance of the class.  Can have static functions and variables<br /> -->
+						<!-- not for spring 22 <strong><a href="https://github.com/CNUClasses/demo_operator_overload.git">Class operator overloading</a></strong>Overloading the comparison operator in a class. Demo sorting a vector full of this class objects using 2 param std::sort<br /> -->
+						<!-- not for spring 22 <strong><a href="https://github.com/CNUClasses/11_exceptions_assertions.git"> Exceptions and Assertions</a></strong> <br />			 -->
 			</td>
 		</tr>
 		
-<!--
+
 		<tr>
 			<td class="style_white "><em>13,14</em></td>
 			<td class="style_white ">
-				<strong style="color: #cc0000">Class 11/17/21 will be delivered via a pre-recorded video posted on this website.</strong><br><br>	
-				<strong style="color: #cc0000">Test, 11/19/21.  Emphasizes everything from weeks 7 thru 12. And project 4. <BR>
-					The test will be given to you on paper. <br>
-					You may bring 1 sheet of paper with notes on both sides. No other resources are allowed.<br>
-				You should be familiar with or able to write:<br>
-				   -all the pointer example projects from week 7<br>
-				   -the difference between a shallow and a deep copy, and how to make a deep copy of dynamically allocated memory<br>
-				   -9_classes project (final project in weeks 9,10)
-				   -the logger Library (weeks 11,12), be able to build something similar<br>
-				   -unique pointers<br>
-				   -how to substitute unique pointers for raw pointers, and what that means for your objects<br>
-				   -you should also use initializer list for object construction (only way to initialize a const member var)<BR>
-				   -remember the reserved word 'class' should only appear in the header file.  All member functions of a class should be scoped to the class in the cpp file<br>
-				   -you should only #include .h files (never a .cpp file)<Br> 
-			</strong>  
+				
 		
 				<br><!-- merge the following 2 into 1 lecture, the notes are better -->
-<!--				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/10_Inheritence_Composition.pdf">Inheritence and Composition introduction</a></strong> <br>
+				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/10_Inheritence_Composition.pdf">Inheritence and Composition introduction</a></strong> <br>
 				Inheritence models an 'is a' relationship - A horse is an animal<br>
 				Some general rules:<br>
 				-prefer shallow inheritence heiarchy (stick to 2 or at most 3 levels)<br>
@@ -348,11 +335,23 @@
 				-if derived function overrides base function, mark base function as virtual in header file<BR>
 				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/Composition.pdf">Composition introduction Slides</a></strong> <br>
 				Composition models a 'has a' relationship - A car has a radio<BR>
-				<strong><a href="https://drive.google.com/file/d/1kMLYr5nFij7ivNjnQJPX3E1MGiVlUuj5/view?usp=sharing">Composition introduction Slides VIDEO</a></strong> <br>
 				
-				<!-- Get Rid Of This One <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Inheritence_introduction.pdf">Inheritance special cases</a></strong>Constructor/destructor calling order, how to implement copy constructor/assignment operator in derived classes.<br> -->
-<!--				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Classes_Virtual_Polymorphism_Calling_Order_Pure_Virtual_Functions_ABC.pdf">11_Classes Virtual_Polymorphism_Calling-Order_Pure_Virtual_Functions_ABC</a></strong><br>				 
+				<!-- DO NOT DO This One <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Inheritence_introduction.pdf">Inheritance special cases</a></strong>Constructor/destructor calling order, how to implement copy constructor/assignment operator in derived classes.<br> -->
+				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Classes_Virtual_Polymorphism_Calling_Order_Pure_Virtual_Functions_ABC.pdf">11_Classes Virtual_Polymorphism_Calling-Order_Pure_Virtual_Functions_ABC</a></strong><br>				 
 				<!--<strong><a href="https://www.modernescpp.com/index.php/override-and-final">Override and Final</a></strong>A way to ensure correct override, or to prevent it entirely<br>
+					<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Inheritence_ABC_ForrestLife.pdf" >Forest Life, ABC and Class Heiarchy example</a></strong> <br>
+
+					<!-- forest life- develop solution based on composition and inheritance.  Then for leaf crunch it down to just composition and emphasize file number difference (10 for composition BC->decid, conif, Pine, popular, maple) verses 2 for pure composition -->
+<!--							Rules for Design:<br>
+					1. do not use IDE, do high level design first, do not get bogged down with detail<br>
+					2. evaluate design<br>
+					3. go to 1<br>
+		
+					If you code before design, then you tend to try to fix major design flaws by shoehorning in hacky fixes, if you don't code until design is complete, then this is less likely to happen<br>
+					Follow this and you will finish projects faster, they will be cleaner and will have fewer bugs<br>
+
+-->
+
 			
 				
 				<!-- Explain diff between composition and inheritance, show example with professor, then model CNU.  Start with building->Academic/residential , Floors->rooms, Rooms->Office,Bed,Bath,class. Add floors to vector. 
@@ -389,20 +388,8 @@
 							There will be a few short answer/multiple choice problems covering C++ topics<br>
 							THATS IT FOR THE HINTS, GOOD LUCK!<BR>
 							</strong> <br>
-							<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Inheritence_ABC_ForrestLife.pdf" >Forest Life, ABC and Class Heiarchy example</a></strong> <br>
-
-							<!-- forest life- develop solution based on composition and inheritance.  Then for leaf crunch it down to just composition and emphasize file number difference (10 for composition BC->decid, conif, Pine, popular, maple) verses 2 for pure composition -->
-<!--							Rules for Design:<br>
-							1. do not use IDE, do high level design first, do not get bogged down with detail<br>
-							2. evaluate design<br>
-							3. go to 1<br>
-				
-							If you code before design, then you tend to try to fix major design flaws by shoehorning in hacky fixes, if you don't code until design is complete, then this is less likely to happen<br>
-							Follow this and you will finish projects faster, they will be cleaner and will have fewer bugs<br>
-
-				
 	
-									</td>
+									</td>-->
 			<td class="style_white ">
 		
 				<strong><a href="https://github.com/CNUClasses/Inheritence_Intro.git">Inheritence Introduction </a></strong>Models 'Is a' relationship.   Also demonstrates 
@@ -418,7 +405,7 @@
 				
 				<!-- <strong><a href="https://github.com/CNUClasses/11_Teachers1.git"> Teachers - Inheritence, Composition, vector full of base class and unique pointers</a></strong> Lecture demo project.  Syntax for a vector full of base class pointers, and a vector full of unique_pointers and how to dereference both. Using iterators and for each loops to iterate over a vector.<br />	 -->
 
-<!--			</td>
+			</td>
 		</tr>
 <!--		<tr>
 			<td class="style_white "><em>14</em></td>
