@@ -321,45 +321,12 @@
 		</tr>
 		
 
-<!--		<tr>
+		<tr>
 			<td class="style_white "><em>13,14</em></td>
 			<td class="style_white ">
-				
-		
-<!--				<br><!-- merge the following 2 into 1 lecture, the notes are better -->
-<!--				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/10_Inheritence_Composition.pdf">Inheritence and Composition introduction</a></strong> <br>
-				Inheritence models an 'is a' relationship - A horse is an animal<br>
-				Some general rules:<br>
-				-prefer shallow inheritence heiarchy (stick to 2 or at most 3 levels)<br>
-				-push as much functionality into the base class as you can to prevent duplicate code in derived classes (remember pay() example and DRY (don't repeat yourself) principal )<br>
-				-derive publicly from base classes<br>
-				-if derived classes need access to base class member functions or variables, make those member functions and variables protected<br>
-				-if derived function overrides base function, mark base function as virtual in header file<BR>
-				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/Composition.pdf">Composition introduction Slides</a></strong> <br>
-				Composition models a 'has a' relationship - A car has a radio<BR>
-				
-				<!-- DO NOT DO This One <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Inheritence_introduction.pdf">Inheritance special cases</a></strong>Constructor/destructor calling order, how to implement copy constructor/assignment operator in derived classes.<br> -->
-<!--				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Classes_Virtual_Polymorphism_Calling_Order_Pure_Virtual_Functions_ABC.pdf">11_Classes Virtual_Polymorphism_Calling-Order_Pure_Virtual_Functions_ABC</a></strong><br>				 
-				<!--<strong><a href="https://www.modernescpp.com/index.php/override-and-final">Override and Final</a></strong>A way to ensure correct override, or to prevent it entirely<br>
-					<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Inheritence_ABC_ForrestLife.pdf" >Forest Life, ABC and Class Heiarchy example</a></strong> <br>
-
-					<!-- forest life- develop solution based on composition and inheritance.  Then for leaf crunch it down to just composition and emphasize file number difference (10 for composition BC->decid, conif, Pine, popular, maple) verses 2 for pure composition -->
-<!--							Rules for Design:<br>
-					1. do not use IDE, do high level design first, do not get bogged down with detail<br>
-					2. evaluate design<br>
-					3. go to 1<br>
-		
-					If you code before design, then you tend to try to fix major design flaws by shoehorning in hacky fixes, if you don't code until design is complete, then this is less likely to happen<br>
-					Follow this and you will finish projects faster, they will be cleaner and will have fewer bugs<br>
-
--->
-
-			
-				
-				<!-- Explain diff between composition and inheritance, show example with professor, then model CNU.  Start with building->Academic/residential , Floors->rooms, Rooms->Office,Bed,Bath,class. Add floors to vector. 
-					But bog down at how to set up a model that handles variable number of floors, or various types of rooms on a floor -->
-	
-					<!-- Override  in .h file  	show what happens when you add a default parameter to base class and forget to change the signatures of derived classes
+				<br><strong>External content</strong><br>
+				<!--<strong><a href="https://www.modernescpp.com/index.php/override-and-final">Override and Final</a></strong>A way to ensure correct override, or to prevent it entirely<br>-->
+				<!-- Override  in .h file  	show what happens when you add a default parameter to base class and forget to change the signatures of derived classes
 						virtual void foo() override
 					Declaring a method as "override" means that that method is intended to rewrite a (virtual) method on the base class. The overriding method must have same signature (at least for the input parameters) as the method it intends to rewrite.
 					Why is this necessary? Well, the following two common error cases are prevented:
@@ -371,6 +338,35 @@
 					the method in the superclass has the same (input*) signature as the method in the subclass (the rewriting method) 
 			<br>
 					-->
+				<br><strong>Lectures</strong><br>				
+		
+<!--				<br><!-- merge the following 2 into 1 lecture, the notes are better -->
+					<!-- Explain diff between composition and inheritance, show example with professor, then model CNU.  Start with building->Academic/residential , Floors->rooms, Rooms->Office,Bed,Bath,class. Add floors to vector. 
+					But bog down at how to set up a model that handles variable number of floors, or various types of rooms on a floor -->
+	
+				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/10_Inheritence_Composition.pdf">Inheritence and Composition introduction</a></strong> <br>
+				Inheritence models an 'is a' relationship - A horse is an animal<br>
+				Some general rules:<br>
+				-prefer shallow inheritence heiarchy (stick to 2 or at most 3 levels)<br>
+				-push as much functionality into the base class as you can to prevent duplicate code in derived classes (remember pay() example and DRY (don't repeat yourself) principal )<br>
+				-derive publicly from base classes<br>
+				-if derived classes need access to base class member functions or variables, make those member functions and variables protected<br>
+				-if derived function overrides base function, mark base function as virtual in header file<BR>
+				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/Composition.pdf">Composition introduction Slides</a></strong> <br>
+				Composition models a 'has a' relationship - A car has a radio<BR>
+				
+				<!-- DO NOT DO This One <strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Inheritence_introduction.pdf">Inheritance special cases</a></strong>Constructor/destructor calling order, how to implement copy constructor/assignment operator in derived classes.<br> -->
+				<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Classes_Virtual_Polymorphism_Calling_Order_Pure_Virtual_Functions_ABC.pdf">11_Classes Virtual_Polymorphism_Calling-Order_Pure_Virtual_Functions_ABC</a></strong><br>				 
+					<br>
+					forest life- develop solution based on composition and inheritance.  Then for leaf crunch it down to just composition and emphasize file number difference (10 for composition BC->decid, conif, Pine, popular, maple) verses 2 for pure composition -->
+							Rules for Design:<br>
+					1. do not use IDE, do high level design first, do not get bogged down with detail<br>
+					2. evaluate design<br>
+					3. go to 1<br>
+		
+					If you code before design, then you tend to try to fix major design flaws by shoehorning in hacky fixes, if you don't code until design is complete, then this is less likely to happen<br>
+					Follow this and you will finish projects faster, they will be cleaner and will have fewer bugs<br>
+					<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/11_Inheritence_ABC_ForrestLife.pdf" >Forest Life, ABC and Class Heiarchy example</a></strong> <br>
 <!--					<br>
 					<strong style="color: #cc0000">Midterm 1 and Midterm 2 solutions on scholar under 'tests' in sidebar</strong><br><br>
 					<strong style="color: #cc0000">Final Exam Schedule<BR>
@@ -390,15 +386,16 @@
 							THATS IT FOR THE HINTS, GOOD LUCK!<BR>
 							</strong> <br>
 	
-									</td>-->
-<!--			<td class="style_white ">
+						-->									
+					</td>
+			<td class="style_white ">
 		
 				<strong><a href="https://github.com/CNUClasses/Inheritence_Intro.git">Inheritence Introduction </a></strong>Models 'Is a' relationship.   Also demonstrates 
+				<strong><a href="https://github.com/CNUClasses/11_Virtual_BaseClassPointers_animals.git"> Virtual functions and Base Class Pointer manipulation of derived classes </a></strong> A class heiarchy with animal, farmanimal and sheep<br />			
 				virtual functions and base class pointer manipulation of derived classes.  Please keep in mind that large, and in particular deep, inheritance heiarchies are difficult to maintain.  <br/>
 				<strong><a href="https://github.com/CNUClasses/Composition_Intro.git">Composition Introduction </a></strong>Models 'Has a' relationship.  More natural than inheritence.  Prefer Composition over inheritence<br/>
 				
 			
-				<strong><a href="https://github.com/CNUClasses/11_Virtual_BaseClassPointers_animals.git"> Virtual functions and Base Class Pointer manipulation of derived classes </a></strong> A class heiarchy with animal, farmanimal and sheep<br />			
 				<strong><a href="https://github.com/CNUClasses/11_AbstractBaseClass_Polymorphism_Vector.git">  AbstractBaseClass Polymorphism and a Vector </a></strong> Oil and Water mixing in a vector full of base class Liquid pointers.  Delete object pointed to before vector goes out of scope (avoid manual deletion by using unique pointers as shown in 'Vectors full of base class and unique pointers' project)<br />		
 				<strong><a href="https://github.com/CNUClasses/11_forest_life_ABC_polymorphic_vector.git"> Forest Life</a></strong> A class heiarchy that simulates a forest living through seasons and through the years. Please see the <a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/Class_diagram_forrest_life.png"> CLASS DIAGRAM</a> for how classes interact with each other</a><br />		
 				<strong><a href="https://github.com/CNUClasses/Flat_tire.git"> Flat Tire</a></strong> In class demo, slighty harder than the kind of problem I'm likely to ask on exam </a><br />		
