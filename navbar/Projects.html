@@ -85,6 +85,34 @@
     <strong><a href="https://student-gitlab.pcs.cnu.edu/cpsc327-crn8147-s23/Proj_refactor_monolithic_file.git"> Project 1</a></strong><br>   
   </td>
 </tr>
+<tr>	
+  <td class="style_white "><em>2</em></td>
+  <td class="style_white ">2/11/23 midnight</td>
+  <td class="style_white ">
+   <strong><a href="https://student-gitlab.pcs.cnu.edu/cpsc327-crn8147-s23/proj_vector_word_count_skeleton"> Project 2</a></strong><br>
+   
+   </a></strong><br><br>
+   Things to consider
+   <ul>
+      <li>If you are having trouble with test 30 or 32.  In Project2.cpp set and hit a breakpoint at line 223 or 231, then open and compare the 2 files visually.  Often the problem is the lack of a CRLF on the last line.</li>
+     <li>The last parameter in openFile has a default argument given (= std::ios_base::in)
+         Default arguments should only be given in the function declaration, not the definition, in other
+         words do not include this default argument in the function definition in the cpp file</li>
+     <li>In compare functions, pass values by ref, dont incur the cost of a copy</li>
+     <li>Use the value of enums!  Dont do this<br>
+         void sortArray(constants::sortOrder so) {<br>
+         :<br>
+         switch (so) {<br>
+           case 0:<br>
+
+     do this instead<br>
+     void sortArray(constants::sortOrder so) {<br>
+         :<br>
+         switch (so) {<br>
+           case constants::NONE:<br></li>
+     </ul>
+ </td>
+</tr>
 
            </table>
     </section>
