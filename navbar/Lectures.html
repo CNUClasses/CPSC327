@@ -125,6 +125,49 @@
 			
 			</td>
 	</tr>
+	<tr>
+		<td class="style_white "><em>5</em></td>
+		<td class="style_white ">
+			<br><strong>External content</strong><br>	
+			<strong><a href="http://www.cplusplus.com/doc/tutorial/files/"> file IO</a></strong> Website with example code<br>
+			<strong><a href="https://www.youtube.com/watch?v=LwAPKuJpvmA"> Pointers and References </a></strong>Short video with a punishing soundtrack<br>	
+			<strong><a href="http://www.cplusplus.com/reference/vector/vector/">Excellent vector intro</a></strong><br>
+
+			<br><strong>Lectures</strong><br>
+			<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/4_pointers_references_functions.pdf"> 4_pointers_references_functions (ROUGH NOTES).pdf</a></strong><br>
+			<b>RULES FOR PASSING VARIABLES TO FUNCTIONS</b>
+				<ol>
+					<li><b>NEVER pass by value ... int func(int i)</b>  You make a potentially time and memory consumming copy of the variable. Changes made to variable i in the function are lost when the function returns.<br></li>
+					<li><b>Prefer: pass by reference ... int func(int &i)</b>  You pass the address of the variable, very fast.  Changes made to variable i in the function are preserved when the function returns. Also, a reference cannot be null so you don't have to verify that it is not null.  <br></li>
+					<li><b>Prefer: pass by pointer ... int func( int *i)</b> You pass the address of the variable, very fast. Changes made to variable i in the function are preserved when the function returns. A pointers can be null (==0) so you must ensure it's not before dereferencing it. Like so;<br> 
+				    <code>int func( int *i){ <br>
+						&emsp; if(i){		    //as long as i is not 0<br>
+						&emsp;&emsp;   *i=7;	//then you may manipulate the value that i points to <br>
+						&emsp; }<br>
+				   	} </code>
+				</li>
+				</ol>
+	
+			<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/4_Streams.pdf">File Input/Output</a></strong> File I/O<br>
+			<!-- This starts with the problem posed at the end of 4_Streams lecture and then further develops it-->
+			<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/In_CLASS_LAB_Designing_a_Cpp_project.pdf" style="color: #00cc00">Designing_a_Cpp_project: modularization, directory layout, includes, namespace</a>
+			</strong> Breaking a problem into modules and how to layout a projects directory structure to accomodate these modules<br> 
+
+					
+			<strong><a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/6_debug_verses_release_whiteboard_notes.pdf"> Debug verses Release builds</a></strong> A side by side Comparison<br>		   	   		
+	
+		</td>
+		<td class="style_white ">
+			<strong><a href="https://github.com/CNUClasses/4_pointers_reference.git"> 4_pointers_reference.git- Passing parameters to functions</a></strong> <br />
+
+			<strong><a href="https://github.com/CNUClasses/4_fileio.git"> 4_fileio</a></strong> <br />
+			<strong><a href="https://github.com/CNUClasses/3_dirlayout_includes_namespace.git" style="color: #00cc00"> In CLASS LAB SOLUTION Designing_a_Cpp_project::</a></strong> How to break a problem into modules and how to layout a projects directory structure to accomodate these modules <br />
+			<strong><a href="https://github.com/CNUClasses/test_stringstream.git"> DEMO: How to use stringstream to parse a line from a file</a></strong><br><br>
+		
+			</td>
+	</tr>
+
+
 	
 </table>
         <p></p>
