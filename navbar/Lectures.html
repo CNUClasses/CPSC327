@@ -258,7 +258,19 @@
 	<tr>
 		<td class="style_white "><em>11,12</em></td>
 		<td class="style_white ">
-			<strong style="color: #cc0000">Test, 11/16/23.  Emphasizes everything from weeks 7 thru 13, and project 3. <BR> <br>
+			
+			</strong> 
+		<br><strong>External content</strong><br>
+			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/11_Unique_Pointers_Excerpt_ From Effective_Modern_Cplusplus.pdf" >Unique Pointers - from Effective Modern C++ by Scott Meyers</a></strong> <br>
+			<strong><a href="https://mbevin.wordpress.com/2012/11/18/smart-pointers/">unique_ptr</a></strong> please read (and understand) up to "shared_ptr" section.  The sample code is good.<br>
+			<strong><a href="https://mbevin.wordpress.com/2012/11/20/move-semantics/">Move semantics</a></strong>WARNING! Complex and subtle, not required for this course but useful professionally.  The sample code is good.<br>
+			<strong><a href="https://www.geeksforgeeks.org/static-keyword-cpp/">Static Keyword in C++, variables, member functions, member variables </a></strong> All things static in C++ <br>
+
+			<br><strong>Lectures</strong><br>
+			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/10_cpp_11_smart_pointers.pdf" >Smart pointers in C++ 11</a></strong> <br>
+			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/12_Exceptions.pdf" >Exceptions and Assertions</a></strong> <br>	<br>
+			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/10_classes_this_pointer_static_members_operators.pdf">this pointer, static, operator overloading</a></strong> <br>
+			<strong style="color: #cc0000">Test, 11/16/23.  Emphasizes everything from weeks 7 thru 12, and project 3. <BR> <br>
 				You may bring 1 sheet of paper with notes on both sides. No other resources are allowed.<br>
 			You should be familiar with or able to write:<br>
 			   -All the pointer example projects from weeks 7 and 8<br>
@@ -270,18 +282,6 @@
 			   -Remember the reserved word 'class' should only appear in the header file.  All member functions of a class should be scoped to the class in the cpp file<br>
 			   -You should only #include .h files (never a .cpp file)<Br> 
 				-You should be able to create a simple class based on a description of what the class does<BR>
-			</strong> 
-		<br><strong>External content</strong><br>
-			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/11_Unique_Pointers_Excerpt_ From Effective_Modern_Cplusplus.pdf" >Unique Pointers - from Effective Modern C++ by Scott Meyers</a></strong> <br>
-			<strong><a href="https://mbevin.wordpress.com/2012/11/18/smart-pointers/">unique_ptr</a></strong> please read (and understand) up to "shared_ptr" section.  The sample code is good.<br>
-			<strong><a href="https://mbevin.wordpress.com/2012/11/20/move-semantics/">Move semantics</a></strong>WARNING! Complex and subtle, not required for this course but useful professionally.  The sample code is good.<br>
-			<strong><a href="https://www.geeksforgeeks.org/static-keyword-cpp/">Static Keyword in C++, variables, member functions, member variables </a></strong> All things static in C++ <br>
-
-			<br><strong>Lectures</strong><br>
-			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/10_cpp_11_smart_pointers.pdf" >Smart pointers in C++ 11</a></strong> <br>
-			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/12_Exceptions.pdf" >Exceptions and Assertions</a></strong> <br>	<br>
-			<!-- not for 22 (or ever)remove operator overloading from this deck as it is gone over below<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/10_classes_this_pointer_static_members_operators.pdf">this pointer, static, operator overloading</a></strong> <br> -->
-			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/10_operator_overloading.pdf">operator overloading</a></strong> <br>
 		</td>
 	<td class="style_white ">
 		<strong><a href="https://github.com/CNUClasses/unique_ptr_ex.git"> Unique pointers - intro code</a></strong> Goes with the unique_ptr tutorial on the left<br />
@@ -297,7 +297,7 @@
 
 		</td>
 	</tr>
-<!--	<tr>
+	<tr>
 		<td class="style_white "><em>13</em></td>
 		<td class="style_white ">
 			<br><strong>External content</strong><br>
@@ -314,13 +314,13 @@
 				the method in the superclass has the same (input*) signature as the method in the subclass (the rewriting method) 
 		<br>
 				-->
-<!--			<br><strong>Lectures</strong><br>				
+			<br><strong>Lectures</strong><br>				
 	
 <!--				<br><!-- merge the following 2 into 1 lecture, the notes are better -->
 				<!-- Explain diff between composition and inheritance, show example with professor, then model CNU.  Start with building->Academic/residential , Floors->rooms, Rooms->Office,Bed,Bath,class. Add floors to vector. 
 				But bog down at how to set up a model that handles variable number of floors, or various types of rooms on a floor -->
 
-<!--			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/10_Inheritence_Composition.pdf">Inheritence and Composition introduction</a></strong> <br>
+			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/10_Inheritence_Composition.pdf">Inheritence and Composition introduction</a></strong> <br>
 			Inheritence models an 'is a' relationship - A horse is an animal<br>
 			Some general rules:<br>
 			-Use initializer list, call base cass constructor first, then initialize member variables<br>
@@ -329,11 +329,11 @@
 			-derive publicly from base classes<br>
 			-if derived classes need access to base class member functions or variables, make those member functions and variables protected<br>
 			-if derived function overrides base function, mark base function as virtual in header file<BR>
-			<!-- <strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/Composition.pdf">Composition introduction Slides</a></strong> <br>
-			Composition models a 'has a' relationship - A car has a radio<BR> -->
+			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/Composition.pdf">Composition introduction Slides</a></strong> <br>
+			Composition models a 'has a' relationship - A car has a radio<BR>
 			
 			
-<!--				</td>
+				</td>
 		<td class="style_white ">
 	
 			<strong><a href="https://github.com/CNUClasses/Inheritence_Intro.git">Inheritence Introduction </a></strong>Models 'Is a' relationship.<br>
@@ -343,12 +343,11 @@
 			<strong><a href="https://github.com/CNUClasses/Composition_Intro_using_unique_pointers.git">Composition Introduction - using unique pointers </a></strong>Same as above except it uses unique pointers<br/>
 		</td>
 	</tr>
-	<tr>
+<!--	<tr>
 		<td class="style_white "><em>14</em></td>
 		<td class="style_white ">
 			<BR>
 				
-				<!-- DO NOT DO This One <strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/11_Inheritence_introduction.pdf">Inheritance special cases</a></strong>Constructor/destructor calling order, how to implement copy constructor/assignment operator in derived classes.<br> -->
 <!--			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/11_Classes_Virtual_Polymorphism_Calling_Order_Pure_Virtual_Functions_ABC.pdf">11_Classes Virtual_Polymorphism_Calling-Order_Pure_Virtual_Functions_ABC</a></strong><br>				 
 			<br>
 			forest life- develop solution based on composition and inheritance.  Then for leaf crunch it down to just composition and emphasize file number difference (10 for composition BC->decid, conif, Pine, popular, maple) verses 2 for pure composition -->
@@ -398,6 +397,7 @@
 </table>
         <p></p>
     </section>
+				<!-- DO NOT DO This One <strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/11_Inheritence_introduction.pdf">Inheritance special cases</a></strong>Constructor/destructor calling order, how to implement copy constructor/assignment operator in derived classes.<br> -->
 
 
 	
