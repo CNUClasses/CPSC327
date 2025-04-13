@@ -328,24 +328,31 @@
 				<!-- Explain diff between composition and inheritance, show example with professor, then model CNU.  Start with building->Academic/residential , Floors->rooms, Rooms->Office,Bed,Bath,class. Add floors to vector. 
 				But bog down at how to set up a model that handles variable number of floors, or various types of rooms on a floor -->
 
-			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/10_Inheritence_Composition.pdf">Inheritence and Composition introduction</a></strong> <br>
+
+			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/10_Inheritence_Composition.pdf">Inheritence and Composition introduction</a></strong> <br><br>
+
+			<a href="https://www.youtube.com/watch?v=KjYnHm19KMY&ab_channel=KeithPerkins">RECORDED, Inheritance overview </a>Tuesday 4/15/25 lecture: <br>
+
 			<b>Inheritence models an 'is a' relationship - A horse is an animal</b><br>
+
 			Some general rules:<br>
-			-Use initializer list, call base cass constructor first, then initialize member variables<br>
-			-prefer shallow inheritence heiarchy (stick to 2 or at most 3 levels)<br>
+			-Use initializer list, call base class constructor first, then initialize member variables<br>
+			-prefer shallow inheritance heiarchy (stick to 2 or at most 3 levels)<br>
 			-push as much functionality into the base class as you can to prevent duplicate code in derived classes (remember pay() example and DRY (don't repeat yourself) principal )<br>
 			-derive publicly from base classes<br>
 			-if derived classes need access to base class member functions or variables, make those member functions and variables protected<br>
-			-if derived function overrides base function, mark base function as virtual in header file, this ensures proper calling order when manipulating derived class instances using base class pointers<BR>
+			-if derived function overrides base function, mark base function as virtual in header file, this ensures proper calling order when manipulating derived class instances using base class pointers<BR><br>
 			<!-- <strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/Composition.pdf">Composition introduction Slides</a></strong> <br> -->
+			<a href="https://www.youtube.com/watch?v=KjYnHm19KMY&ab_channel=KeithPerkins">RECORDED, Composition overview </a>Tuesday 4/15/25 lecture: <br>
 			<b>Composition models a 'has a' relationship - A car has a radio</b><BR>
+
 				-implement by class Car having a pointer to a Radio class. If the Radio pointer is null then the car does not have a radio. <br>
 				-Composition is more natural than inheritence<br>
 				-Composition is easier to understand<br>
 				-Composition allows you to change the implementation of a class without changing the interface (the public functions that other classes use)<br><br>
 
 
-			<mark>Prefer composition over inheritence.  <br>
+			<mark>Prefer composition over inheritance.  <br>
 			
 			
 				</td>
