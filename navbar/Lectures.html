@@ -329,18 +329,23 @@
 				But bog down at how to set up a model that handles variable number of floors, or various types of rooms on a floor -->
 
 			<strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/10_Inheritence_Composition.pdf">Inheritence and Composition introduction</a></strong> <br>
-			Inheritence models an 'is a' relationship - A horse is an animal<br>
+			<b>Inheritence models an 'is a' relationship - A horse is an animal</b><br>
 			Some general rules:<br>
 			-Use initializer list, call base cass constructor first, then initialize member variables<br>
 			-prefer shallow inheritence heiarchy (stick to 2 or at most 3 levels)<br>
 			-push as much functionality into the base class as you can to prevent duplicate code in derived classes (remember pay() example and DRY (don't repeat yourself) principal )<br>
 			-derive publicly from base classes<br>
 			-if derived classes need access to base class member functions or variables, make those member functions and variables protected<br>
-			-if derived function overrides base function, mark base function as virtual in header file<BR>
+			-if derived function overrides base function, mark base function as virtual in header file, this ensures proper calling order when manipulating derived class instances using base class pointers<BR>
 			<!-- <strong><a href="https://cnuclasses.github.io/CPSC327/content/Lectures/Composition.pdf">Composition introduction Slides</a></strong> <br> -->
-			Composition models a 'has a' relationship - A car has a radio<BR>
+			<b>Composition models a 'has a' relationship - A car has a radio</b><BR>
+				-implement by class Car having a pointer to a Radio class. If the Radio pointer is null then the car does not have a radio. <br>
+				-Composition is more natural than inheritence<br>
+				-Composition is easier to understand<br>
+				-Composition allows you to change the implementation of a class without changing the interface (the public functions that other classes use)<br><br>
 
-			<mark>You should prefer composition over inheritence.  Inheritence is a powerful tool, but it is easy to misuse.  Composition is more natural and easier to understand.  It also allows you to change the implementation of a class without changing the interface (the public functions that other classes use).<br>
+
+			<mark>Prefer composition over inheritence.  <br>
 			
 			
 				</td>
